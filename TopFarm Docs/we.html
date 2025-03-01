@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopFarm</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/1920/1080');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .hero h1 {
+            text-shadow: 2px 2px 4px #000;
+            font-size: 36px;
+        }
+        .hero p {
+            text-shadow: 2px 2px 4px #000;
+            font-size: 18px;
+        }
+        .about-section {
+            padding: 50px 0;
+            background-color: #f7f7f7;
+        }
+        .services-section {
+            padding: 50px 0;
+            background-image: linear-gradient(to bottom, #c6efce, #c6efce);
+        }
+        .product-section {
+            padding: 50px 0;
+            background-color: #f2f2f2;
+        }
+        .product-card {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.2s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .testimonial-section {
+            background-color: #c6efce;
+            padding: 50px 0;
+        }
+        .testimonial-card {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .location-section {
+            padding: 50px 0;
+            background-color: #f7f7f7;
+        }
+        .map {
+            height: 400px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            font-size: 16px;
+            color: #333;
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover {
+            color: #666;
+        }
+        .navbar {
+            padding: 0.5rem;
+        }
+        .btn-primary {
+            background-color: #8bc34a;
+            border-color: #8bc34a;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: #7cb342;
+        }
+        .address-info {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">TopFarm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1>TopFarm Farmer Producer Company Pvt. Ltd.</h1>
+            <p>A company made by farmers for the farmers, collaborating with 200+ farmers across 15+ villages based in Maharashtra.</p>
+            <p>Specializing in high-quality mushroom cultivation and other essential crops.</p>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="mb-4">Company Overview</h2>
+            <p>Established in 2023 in Tapargaon near Ellora by farmer Mr. Vinod Motinge, with a goal to develop people, processes, and practices that empower smallholder Indian farmers to compete at a global level by producing top-quality fresh Mushrooms and other crops.</p>
+            <h2 class="mb-4">Our Farms</h2>
+            <p>Located in 2-3 main locations, our farms use Crop Rotation, Organic Farming, and Intercropping practices to ensure sustainable and high-quality produce.</p>
+        </div>
+    </section>
+    <section class="product-section" id="products">
+        <div class="container">
+            <h2 class="mb-4">Our Products</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="c:\Users\Prathmesh\Desktop\TopFarm Docs\Images\Mush.room.jpg" class="card-img-top" alt="Mushrooms">
+                        <h3>Mushrooms</h3>
+                        
+                        <p>Rich in Nutrients, Boosts Immunity, Supports Brain Health, Aids Heart Health, Antioxidant Properties, Weight Management</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="c:\Users\Prathmesh\Desktop\TopFarm Docs\Images\onion.jpg" class="card-img-top" alt="Onion">
+                        <h3>Onion</h3>
+                        <p>We cultivate high-quality onions, rich in fiber, vitamins, and minerals.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="c:\Users\Prathmesh\Desktop\TopFarm Docs\Images\chana.jpg" class="card-img-top" alt="Chana (Chickpeas)">
+                        <h3>Chana (Chickpeas)</h3>
+                        <p>Our chickpeas are rich in protein, fiber, and various essential nutrients.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="c:\Users\Prathmesh\Desktop\TopFarm Docs\Images\Ginger.jpg" class="card-img-top" alt="Ginger">
+                        <h3>Ginger</h3>
+                        <p>We grow high-quality ginger, known for its digestive and anti-inflammatory properties.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="c:\Users\Prathmesh\Desktop\TopFarm Docs\Images\Chilli.jpg" class="card-img-top" alt="Chili">
+                        <h3>Chilli</h3>
+                        <p>Our chilies are rich in vitamins, minerals, and antioxidants, making them a great addition to any dish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <h3>Wholesale Supply</h3>
+                            <p>Bulk purchasing options for retailers and businesses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <h3>Contract Farming</h3>
+                            <p>Collaboration with farmers for large-scale production</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <h3>Organic Farming Consultation</h3>
+                            <p>Guidance on sustainable farming methods</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sustainability-section" id="sustainability">
+        <div class="container">
+            <h2 class="mb-4">Sustainability And Practices</h2>
+            <p>At TopFarm, we are committed to sustainable agriculture and use organic and eco-friendly farming techniques, water conservation, and soil management practices.</p>
+        </div>
+    </section>
+    <section class="testimonial-section" id="testimonials">
+        <div class="container">
+            <h2 class="mb-4">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="testimonial-card">
+                        <p>"I love the freshness of the products!"</p>
+                        <h3>Ram</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="testimonial-card">
+                        <p>"The service is always top-notch!"</p>
+                        <h3>Devrao</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="testimonial-card">
+                        <p>"I highly recommend TopFarm!"</p>
+                        <h3>Narayan</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    
+                    <div class="address-info">
+                        <p>TopFarm Farmer Producer Company Pvt. Ltd.</p>
+                        <p>Tapargaon near Ellora, Maharashtra, India</p>
+                        <p>Pincode: 431102</p>
+                    </div>
+                    <div class="address-info">
+                        <p>Registered Office:</p>
+                        <p>Village Tapargaon, Post office - Ellora, Taluka - Aurangabad, District - Aurangabad, Maharashtra, India</p>
+                        <p>Pincode: 431102</p>
+                    </div>
+                    <div class="address-info">
+                        <p>Mailing Address:</p>
+                        <p>TopFarm Farmer Producer Company Pvt. Ltd.</p>
+                        <p>C/O Mr. Vinod Motinge, Village Tapargaon, Post office - Ellora, Taluka - Aurangabad, District - Aurangabad, Maharashtra, India</p>
+                        <p>Pincode: 431102</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Contact Information</h3>
+                    <div class="address-info">
+                        <p>Phone: +91 9552288166</p>
+                        <p>Email: <a href="mailto:info@topfarm.com">info@topfarm.com</a></p>
+                    </div>
+                    <h3>Social Media</h3>
+                    <div class="address-info">
+                        <p><a href="#" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></p>
+                        <p><a href="#" target="_blank"><i class="bi bi-twitter"></i> Twitter</a></p>
+                        <p><a href="#" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
